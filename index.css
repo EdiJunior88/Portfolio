@@ -1,0 +1,10 @@
+
+
+.foto {
+  width: 200px;
+}
+
+.foto img {
+  width: 100%;
+  border-radius: 8px;
+}
