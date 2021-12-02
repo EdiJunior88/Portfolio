@@ -1,4 +1,17 @@
 .container_cabecalho {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.container_cabecalho li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container_cabecalho a {
+  padding: 0px 50px;
+  text-align: center;
 }
 
 .container_corpo {
@@ -19,4 +32,9 @@
 
 .projetos {
   grid-column: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
