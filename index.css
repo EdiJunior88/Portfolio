@@ -1,6 +1,14 @@
+.container_cabecalho {
+}
 
+.container_corpo {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 20px;
+}
 
 .foto {
+  margin: auto;
   width: 200px;
 }
 
