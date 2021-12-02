@@ -3,7 +3,7 @@
 
 .container_corpo {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 400px 1fr;
   gap: 20px;
 }
 
@@ -15,4 +15,8 @@
 .foto img {
   width: 100%;
   border-radius: 8px;
+}
+
+.projetos {
+  grid-column: 2;
 }
