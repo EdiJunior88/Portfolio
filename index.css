@@ -1,16 +1,13 @@
 .container_cabecalho {
   display: flex;
-  justify-content: center;
-  padding: 30px 0px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 200px;
 }
 
 .container_cabecalho li, a {
   list-style-type: none;
   text-decoration: none;
-}
-
-.container_cabecalho a {
-  padding: 0px 50px;
   text-align: center;
 }
 
@@ -37,4 +34,8 @@
 footer {
   display: flex;
   justify-content: center;
+}
+
+footer p {
+  margin: 0px;
 }
