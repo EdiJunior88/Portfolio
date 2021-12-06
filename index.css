@@ -1,9 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(48, 48, 48);
+  color: white;
 }
 
 main {
-  margin: 0px 50px;
+  margin: 0px 20px;
 }
 
 .container_cabecalho {
@@ -17,6 +19,7 @@ main {
   list-style-type: none;
   text-decoration: none;
   text-align: center;
+  color: white;
 }
 
 .container_corpo {
@@ -38,12 +41,22 @@ main {
   object-fit: cover;
 }
 
-.titulo {
-  text-align: center;
+.div_nav_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/banner.png);
+  height: 60px;
+  border-radius: 0.5em;
 }
 
-.texto {
+.titulo {
+  margin: 0px;
+}
+
+.texto_sobre_mim {
   text-align: justify;
+  margin: 35px;
 }
 
 .container_footer {
@@ -57,6 +70,7 @@ main {
 
 .container_card {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
 }
@@ -66,15 +80,15 @@ main {
   box-sizing: border-box;
   width: 250px;
   height: 225px;
-  border-radius: 0.6em;
-  background:chartreuse;
+  border-radius: 0.5em;
+  background:#F26D3D;
   margin: auto;
   box-shadow: 8px 6px 8px -6px rgb(0 0 0 / 15%);
 }
 
 .card_imagem {
   width: 100%;
-  border-radius: 0.6em 0.6em 0px 0px;
+  border-radius: 0.5em 0.5em 0px 0px;
 }
 
 .texto_card {
@@ -86,7 +100,7 @@ main {
 .container_svg {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 10px;
 }
 
