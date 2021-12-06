@@ -69,6 +69,7 @@ main {
   border-radius: 0.6em;
   background:chartreuse;
   margin: auto;
+  box-shadow: 8px 6px 8px -6px rgb(0 0 0 / 15%);
 }
 
 .card_imagem {
@@ -78,6 +79,17 @@ main {
 
 .texto_card {
   text-align: center;
-  margin: 20px;
+  margin: 10px 0px;
   box-sizing: inherit;
+}
+
+.container_svg {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.imagem_svg {
+  width: 15%;
 }
