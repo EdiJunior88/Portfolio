@@ -46,3 +46,14 @@
 .titulo__section {
   text-align: center;
 }
+
+.container__card {
+  display: flex;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.imagem__card {
+  box-sizing: content-box;
+  width: 100%;
+}
