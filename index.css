@@ -54,6 +54,21 @@
 }
 
 .imagem__card {
+
   box-sizing: content-box;
   width: 100%;
+}
+
+.container__imagem_card_svg {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.imagem__card_svg {
+  width: 64px;
+}
+
+.imagem__github {
+  width: 58px;
 }
