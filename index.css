@@ -18,7 +18,31 @@
   list-style-type: none;
 }
 
-section {
+.container__section_sobreMim,
+.container__section_projetos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  background: blanchedalmond;
+}
+
+.texto__article {
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.container__foto_perfil {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.foto__perfil {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.titulo__section {
+  text-align: center;
 }
