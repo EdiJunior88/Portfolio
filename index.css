@@ -1,5 +1,5 @@
 
-.container__menu {
+.container__nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,4 +16,9 @@
 .menu a {
   text-decoration: none;
   list-style-type: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
