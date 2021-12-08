@@ -47,28 +47,38 @@
   text-align: center;
 }
 
+.article__container_card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .container__card {
-  display: flex;
-  width: 200px;
+  width: 12.5em;
   border: 1px solid black;
+  background: cornflowerblue;
 }
 
 .imagem__card {
-
   box-sizing: content-box;
   width: 100%;
+}
+
+.texto__card {
+  text-align: center;
 }
 
 .container__imagem_card_svg {
   display: inline-flex;
   justify-content: center;
-  width: 200px;
+  width: 100%;
 }
 
 .imagem__card_svg {
-  width: 64px;
+  width: 3em;
 }
 
 .imagem__github {
-  width: 58px;
+  width: 2.7em;
 }
