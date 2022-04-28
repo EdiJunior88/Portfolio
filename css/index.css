@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Cabeçalho Menu (links) */
 
 .container-cabecalho-menu {
   background: #141414;
@@ -30,4 +32,60 @@
   text-decoration: none;
   padding-left: 64px;
   font-weight: 600;
+}
+
+/* Cabeçalho Título - Descrição e Foto */
+
+.cabecalho-imagem-fundo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 664px;
+}
+
+.container-cabecalho-titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/background.jpg");
+  height: 566px;
+}
+
+.cabecalho-titulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.titulo, .subtitulo, .subtitulo2 {
+  color: #fff;
+}
+
+.titulo {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 48px;
+}
+
+.subtitulo2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+.cabecalho-foto-perfil {
+  width: 348px;
+}
+
+.foto-perfil {
+  width: 100%;
+  border-radius: 35px;
 }
