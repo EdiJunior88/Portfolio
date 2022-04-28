@@ -1,84 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 
-.container__nav {
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-cabecalho-menu {
+  background: #141414;
+  height: 101px;
+}
+
+.ul-menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: greenyellow;
-}
-
-.menu {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 1em;
-}
-
-.menu a {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.container__section_sobreMim,
-.container__section_projetos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
-  justify-content: center;
-  background: blanchedalmond;
-}
-
-.texto__article {
-  text-align: justify;
-  text-indent: 2em;
-}
-
-.container__foto_perfil {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.foto__perfil {
-  width: 150px;
-  border-radius: 8px;
-}
-
-.titulo__section {
-  text-align: center;
-}
-
-.article__container_card {
-  display: inline-flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  align-content: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 5%;
 }
 
-.container__card {
-  width: 12.5em;
-  border: 1px solid black;
-  background: cornflowerblue;
+.li-menu {
+  list-style: none;
 }
 
-.imagem__card {
-  box-sizing: content-box;
-  width: 100%;
-}
-
-.texto__card {
-  text-align: center;
-}
-
-.container__imagem_card_svg {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.imagem__card_svg {
-  width: 3em;
-}
-
-.imagem__github {
-  width: 2.7em;
+.li-menu a {
+  color: #fca311;
+  text-decoration: none;
+  padding-left: 64px;
+  font-weight: 600;
 }
