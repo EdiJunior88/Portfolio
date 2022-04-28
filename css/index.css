@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
 
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
@@ -22,6 +20,7 @@
   justify-content: flex-end;
   height: 100%;
   margin-right: 5%;
+  margin-top: 0px;
 }
 
 .li-menu {
