@@ -49,7 +49,7 @@
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../img/background.jpg");
+  background-image: url('../img/background.jpg');
   height: 566px;
 }
 
@@ -62,7 +62,9 @@
   align-content: center;
 }
 
-.titulo, .subtitulo, .subtitulo2 {
+.titulo,
+.subtitulo,
+.subtitulo2 {
   color: #fff;
 }
 
@@ -80,12 +82,69 @@
   font-weight: 500;
 }
 
-
 .cabecalho-foto-perfil {
-  width: 348px;
+  width: 308px;
 }
 
 .foto-perfil {
   width: 100%;
   border-radius: 35px;
 }
+
+/* Corpo da Página - Habilidades */
+
+.container-corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  height: 664px;
+}
+
+.corpo-titulo span {
+  display: flex;
+  width: 100%;
+  margin-bottom: 77px;
+  font-size: 55px;
+  font-weight: 500;
+  color: #E5E5E5;
+}
+
+.corpo-habilidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.corpo-habilidades .svg {
+  width: 117px;
+}
+
+.corpo-habilidades span {
+  color: #fff;
+  font-size: 30px;
+}
+
+.habilidades-html,
+.habilidades-css,
+.habilidades-javascript,
+.habilidades-react,
+.habilidades-bootstrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 240px;
+  height: 252px;
+  background: #14213D;
+  border-radius: 31px;
+  margin-right: 91px;
+}
+
+
