@@ -6,7 +6,6 @@
 }
 
 /* Cabeçalho Menu (links) */
-
 .container-cabecalho-menu {
   background: #141414;
   height: 70px;
@@ -35,7 +34,6 @@
 }
 
 /* Cabeçalho Título - Descrição e Foto */
-
 .cabecalho-imagem-fundo {
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +106,6 @@
 }
 
 /* Corpo da Página - Habilidades */
-
 .container-corpo {
   display: flex;
   flex-direction: column;
@@ -165,5 +162,25 @@
   box-shadow: 3px 2px 5px 0px #e5e5e50e;
 }
 
+/* Corpo da Página - Projetos */
 
+.projetos {
+  background: #14213D;
+}
 
+#image-carousel {
+  width: 70%;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 85%;
+  object-fit: fill;
+}
+
+.splide__slide .carousel {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}

@@ -12,6 +12,10 @@
   <link rel="shortcut icon" href="img/favicon/android-chrome-192x192.png" sizes="192x192" type="image/x-icon">
   <link rel="shortcut icon" href="img/favicon/android-chrome-512x512.png" sizes="512x512" type="image/x-icon">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <script src="splide-4.0.1/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="splide-4.0.1/dist/css/splide.min.css">
+
   <title>Portfólio</title>
 </head>
 
@@ -105,6 +109,50 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="container-corpo projetos">
+      <div class="corpo-titulo">
+        <span>Projetos</span>
+      </div>
+
+      <!-- Carousel Splide Plugin -->
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/projetos/react-app.png" alt="projeto react-app">
+              <div class="carousel">
+                Projeto React - App Pagamento
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <img src="img/projetos/musidot.png" alt="projeto bootstrap">
+              <div class="carousel">
+                Projeto HTML / CSS / JAVASCRIPT - MusiDot
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <img src="img/projetos/controle-financeiro.png" alt="projeto controle financeiro">
+              <div class="carousel">
+                Projeto HTML / CSS / JAVASCRIPT - Controle Financeiro
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel', {
+        rewind: true
+      }).mount();
+    });
+  </script>
 </body>
 
 </html>
