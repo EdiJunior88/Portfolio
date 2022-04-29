@@ -103,8 +103,8 @@
 
 .foto-perfil {
   width: 100%;
-  border-radius: 35px;
-  /* margin: 0px 100px; */
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px 0px #e5e5e50e;
 }
 
 /* Corpo da Página - Habilidades */
@@ -112,17 +112,21 @@
 .container-corpo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #141414;
   height: 664px;
+  border-top: 3px solid #E5E5E5;
+}
+
+.corpo-titulo {
+  margin: 70px 0px;
 }
 
 .corpo-titulo span {
   display: flex;
   width: 100%;
-  margin-bottom: 77px;
-  font-size: 55px;
+  font-size: 2rem;
   font-weight: 500;
   color: #E5E5E5;
 }
@@ -137,31 +141,29 @@
 }
 
 .corpo-habilidades .svg {
-  width: 117px;
+  width: 55px;
 }
 
 .corpo-habilidades span {
   color: #fff;
-  font-size: 30px;
+  font-size: 1rem;
   margin-top: 32px;
 }
 
-.habilidades-html,
-.habilidades-css,
-.habilidades-javascript,
-.habilidades-react,
-.habilidades-bootstrap {
+.habilidades {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  width: 240px;
-  height: 252px;
+  width: 160px;
+  height: 152px;
   background: #14213D;
-  border-radius: 31px;
-  margin-right: 91px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 3px 2px 5px 0px #e5e5e50e;
 }
+
 
 
