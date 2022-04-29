@@ -173,14 +173,33 @@
 }
 
 .splide__slide img {
-  width: 100%;
-  height: 85%;
-  object-fit: fill;
+  display: flex;
+  text-align: center;
+  margin-right: auto;
+  width: 89%;
+  height: 75%;
+  object-fit: contain;
+  margin-left: auto;
 }
 
 .splide__slide .carousel {
   color: #fff;
   width: 100%;
   text-align: center;
-  padding-top: 15px;
+  padding: 10px 0px;
+}
+
+.container-carousel-imagem {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container-carousel-imagem .carousel-imagem {
+  width: 40px;
+  margin: 0px 15px;
 }
