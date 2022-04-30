@@ -29,7 +29,7 @@
 .li-menu a {
   color: #fca311;
   text-decoration: none;
-  padding-left: 1.4rem;
+  padding-left: 1.4em;
   font-weight: 600;
 }
 
@@ -52,6 +52,7 @@
   background-image: url('../img/background-2400.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #141414;
 }
 
 .cabecalho-titulo {
@@ -72,19 +73,19 @@
 }
 
 .titulo {
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 800;
   padding-bottom: 15px;
 }
 
 .subtitulo {
-  font-size: 2rem;
+  font-size: 2em;
   padding-bottom: 15px;
 }
 
 .subtitulo2, 
 .subtitulo3 {
-  font-size: 0.5;
+  font-size: 0.5em;
   font-weight: 500;
   word-wrap: break-word;
   text-align: left;
@@ -123,7 +124,7 @@
 .corpo-titulo span {
   display: flex;
   width: 100%;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 500;
   color: #E5E5E5;
 }
@@ -143,7 +144,7 @@
 
 .corpo-habilidades span {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1em;
   margin-top: 32px;
 }
 
@@ -168,38 +169,6 @@
   background: #14213D;
 }
 
-#image-carousel {
-  width: 70%;
-}
 
-.splide__slide img {
-  display: flex;
-  text-align: center;
-  margin-right: auto;
-  width: 89%;
-  height: 75%;
-  object-fit: contain;
-  margin-left: auto;
-}
+/* Carousel dos projetos */
 
-.splide__slide .carousel {
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-}
-
-.container-carousel-imagem {
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.container-carousel-imagem .carousel-imagem {
-  width: 40px;
-  margin: 0px 15px;
-}
