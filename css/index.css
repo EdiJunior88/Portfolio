@@ -83,7 +83,7 @@
   padding-bottom: 15px;
 }
 
-.subtitulo2, 
+.subtitulo2,
 .subtitulo3 {
   font-size: 0.5em;
   font-weight: 500;
@@ -114,7 +114,7 @@
   align-items: center;
   background: #141414;
   height: 664px;
-  border-top: 3px solid #E5E5E5;
+  border-top: 3px solid #e5e5e5;
 }
 
 .corpo-titulo {
@@ -126,7 +126,7 @@
   width: 100%;
   font-size: 2em;
   font-weight: 500;
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 
 .corpo-habilidades {
@@ -157,7 +157,7 @@
   align-content: center;
   width: 160px;
   height: 152px;
-  background: #14213D;
+  background: #14213d;
   border-radius: 10px;
   margin: 15px;
   box-shadow: 3px 2px 5px 0px #e5e5e50e;
@@ -165,11 +165,17 @@
 
 /* Corpo da Página - Projetos */
 
-.projetos {
-  background: #14213D;
+.carousel {
+  width: 80%;
 }
 
+.carousel-caption {
+  background-color: #141414;
+}
 
-/* Carousel dos projetos */
-
-
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url(../img/SVG/previous.svg);
+  background: #fca311;
+  border-radius: 100%;
+}
