@@ -33,6 +33,10 @@
   font-weight: 600;
 }
 
+.li-menu a:hover {
+  color: #fff;
+}
+
 /* Cabeçalho Título - Descrição e Foto */
 .cabecalho-imagem-fundo {
   background-size: cover;
@@ -61,8 +65,8 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  width: 45%;
-  margin-right: 50px;
+  width: 41.8%;
+  margin-right: 75px;
 }
 
 .titulo,
@@ -75,7 +79,6 @@
 .titulo {
   font-size: 4em;
   font-weight: 800;
-  padding-bottom: 15px;
 }
 
 .subtitulo {
@@ -85,8 +88,8 @@
 
 .subtitulo2,
 .subtitulo3 {
-  font-size: 0.5em;
-  font-weight: 500;
+  font-size: 0.9em;
+  font-weight: 400;
   word-wrap: break-word;
   text-align: left;
   padding-bottom: 15px;
@@ -94,6 +97,7 @@
 
 .subtitulo3 {
   line-height: 150%;
+  text-align: justify;
 }
 
 .cabecalho-foto-perfil {
@@ -166,7 +170,7 @@
 /* Corpo da Página - Projetos */
 
 .carousel {
-  width: 80%;
+  width: 74%;
 }
 
 .carousel-caption {
@@ -179,7 +183,6 @@
   background-image: url(../img/SVG/previous.svg);
   background: #fca311;
   border-radius: 100%;
-
 }
 
 .container-imagem-svg {
