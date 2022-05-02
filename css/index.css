@@ -170,7 +170,8 @@
 }
 
 .carousel-caption {
-  background-color: #141414;
+  background: #14213d;
+  border-radius: 5px;
 }
 
 .carousel-control-prev-icon,
@@ -178,4 +179,22 @@
   background-image: url(../img/SVG/previous.svg);
   background: #fca311;
   border-radius: 100%;
+
+}
+
+.container-imagem-svg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-titulo-imagem {
+  color: #fff;
+}
+
+.carousel-imagem-svg-github,
+.carousel-imagem-svg-browser {
+  width: 30px;
+  height: auto;
+  margin: 0px 22px;
 }
