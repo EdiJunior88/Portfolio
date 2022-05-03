@@ -82,7 +82,7 @@
 }
 
 .subtitulo {
-  font-size: 2em;
+  font-size: 2.3em;
   padding-bottom: 15px;
 }
 
@@ -167,8 +167,7 @@
   box-shadow: 3px 2px 5px 0px #e5e5e50e;
 }
 
-/* Corpo da Página - Projetos */
-
+/* Carousel Imagens Projeto */
 .carousel {
   width: 74%;
 }
@@ -200,4 +199,10 @@
   width: 30px;
   height: auto;
   margin: 0px 22px;
+}
+
+/* Corpo da Página - Sobre Mim */
+
+.texto-sobre-mim {
+  color: #fff;
 }
