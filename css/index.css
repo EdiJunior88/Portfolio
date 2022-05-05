@@ -300,7 +300,7 @@ label {
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 10px;
-  box-shadow: var(--cor-sombra);
+  box-shadow: 3px 2px 5px 0px var(--cor-sombra);
 }
 
 #mensagem {
@@ -312,7 +312,7 @@ label {
   border-radius: 5px;
   color: var(--cor-links);
   border: none;
-  box-shadow: var(--cor-sombra);
+  box-shadow: 3px 2px 5px 0px var(--cor-sombra);
   height: 8%;
   background: var(--cor-fundo-caixas);
 }
