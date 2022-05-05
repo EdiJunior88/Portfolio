@@ -8,6 +8,7 @@
   --cor-sombra: #e5e5e50e;
   --cor-fundo-caixas: #14213d;
   --cor-hover-links: #3366d6;
+  --cor-hover-botao: #192c55;
 }
 
 * {
@@ -317,6 +318,12 @@ label {
   background: var(--cor-fundo-caixas);
 }
 
+.botao:hover {
+  background: var(--cor-hover-botao);
+  transition: 0.7s;
+}
+
+/* Personalizando o Scroll Bar (Barra de Rolagem) dentro da caixa mensagem */
 #mensagem::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
 }
