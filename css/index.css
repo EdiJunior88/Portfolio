@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap');
 
+/* Definindo padrões de cores */
+:root {
+  --cor-texto: #e5e5e5;
+  --cor-fundo: #141414;
+  --cor-links: #fca311;
+  --cor-sombra: #e5e5e50e;
+  --cor-fundo-caixas: #14213d;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -13,8 +22,8 @@
 }
 
 .container-cabecalho-menu {
-  background: #141414;
-  height: 70px;
+  background: var(--cor-fundo);
+  height: 50px;
 }
 
 .ul-menu {
@@ -24,23 +33,25 @@
   align-content: center;
   justify-content: flex-end;
   height: 100%;
-  margin-right: 5%;
+  margin-right: 13.5%;
   margin-top: 0px;
 }
 
 .li-menu {
   list-style: none;
+  padding-left: 2%;
 }
 
 .li-menu a {
-  color: #fca311;
+  color: var(--cor-links);
   text-decoration: none;
-  padding-left: 1.4em;
+  font-size: 0.95em;
   font-weight: 600;
 }
 
 .li-menu a:hover {
-  color: #fff;
+  color: var(--cor-texto);
+  transition: 0.3s;
 }
 
 /* Cabeçalho Título - Descrição e Foto */
@@ -62,7 +73,7 @@
   background-image: url('../img/background-2400.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #141414;
+  background-color: var(--cor-fundo);
 }
 
 .cabecalho-titulo {
@@ -70,16 +81,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
-  width: 41.8%;
-  margin-right: 75px;
+  width: 528px;
+  margin-right: 80px;
+  height: auto;
 }
 
 .titulo,
 .subtitulo,
 .subtitulo2,
 .subtitulo3 {
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .titulo {
@@ -94,7 +105,7 @@
 
 .subtitulo2,
 .subtitulo3 {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   word-wrap: break-word;
   text-align: left;
@@ -113,7 +124,25 @@
 .foto-perfil {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 3px 2px 5px 0px #e5e5e50e;
+  box-shadow: 3px 2px 5px 0px var(--cor-sombra);
+}
+
+.cabecalho-links .links {
+  padding-right: 23px;
+}
+
+.cabecalho-links .links:nth-child(4) {
+  padding: 0px;
+}
+
+.links {
+  color: var(--cor-links);
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #3366d6;
+  transition: 0.3s;
 }
 
 /* Corpo da Página - Habilidades */
@@ -122,7 +151,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #141414;
+  background: var(--cor-fundo);
   height: 628px;
   /* border-top: 3px solid #e5e5e5; */
 }
@@ -132,8 +161,8 @@
   width: 100%;
   font-size: 2em;
   font-weight: 500;
-  color: #e5e5e5;
-  padding-top: 80px;
+  color: var(--cor-texto);
+  padding-top: 70px;
 }
 
 .corpo-habilidades {
@@ -144,6 +173,7 @@
   justify-content: center;
   align-content: center;
   padding-top: 30px;
+  width: 88%;
 }
 
 .corpo-habilidades .svg {
@@ -151,7 +181,7 @@
 }
 
 .corpo-habilidades span {
-  color: #fff;
+  color: var(--cor-texto);
   font-size: 1em;
   margin-top: 32px;
 }
@@ -165,27 +195,27 @@
   align-content: center;
   width: 160px;
   height: 152px;
-  background: #14213d;
+  background: var(--cor-fundo-caixas);
   border-radius: 10px;
   margin: 15px;
-  box-shadow: 3px 2px 5px 0px #e5e5e50e;
+  box-shadow: 3px 2px 5px 0px var(--cor-sombra);
 }
 
 /* Carousel Imagens Projeto */
 .carousel {
-  width: 64%;
+  width: 800px;
   padding-top: 30px;
 }
 
 .carousel-caption {
-  background: #14213d;
+  background: var(--cor-fundo);
   border-radius: 5px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: url(../img/SVG/previous.svg);
-  background: #fca311;
+  background: var(--cor-links);
   border-radius: 100%;
 }
 
@@ -196,7 +226,7 @@
 }
 
 .carousel-titulo-imagem {
-  color: #fff;
+  color: var(--cor-texto);
 }
 
 .carousel-imagem-svg-github,
@@ -208,16 +238,19 @@
 
 /* Corpo da Página - Sobre Mim */
 
+.container-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .texto-sobre-mim {
-  color: #fff;
+  width: 73%;
+  color: var(--cor-texto);
+  text-align: justify;
   padding-top: 30px;
-}
-
-.link-sobre-mim {
-  color: #fca311;
-  text-decoration: none;
-}
-
-.link-sobre-mim:hover {
-  color: #3366d6;
+  text-indent: 3em;
 }
