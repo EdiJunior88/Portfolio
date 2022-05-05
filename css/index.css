@@ -7,11 +7,31 @@
   --cor-links: #fca311;
   --cor-sombra: #e5e5e50e;
   --cor-fundo-caixas: #14213d;
+  --cor-hover-links: #3366d6;
 }
 
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+
+  /* Scrollbar personalizada no Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Scrollbar personalizada no Chrome, Edge e Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--cor-fundo-caixas);
+  border-radius: 20px;
+  border: 3px solid var(--cor-texto);
 }
 
 /* Cabeçalho Menu (links) */
@@ -50,7 +70,7 @@
 }
 
 .li-menu a:hover {
-  color: var(--cor-texto);
+  color: var(--cor-hover-links);
   transition: 0.3s;
 }
 
@@ -141,7 +161,7 @@
 }
 
 .links:hover {
-  color: #3366d6;
+  color: var(--cor-hover-links);
   transition: 0.3s;
 }
 
@@ -152,7 +172,6 @@
   justify-content: center;
   align-items: center;
   background: var(--cor-fundo);
-  height: 628px;
   /* border-top: 3px solid #e5e5e5; */
 }
 
@@ -237,7 +256,6 @@
 }
 
 /* Corpo da Página - Sobre Mim */
-
 .container-texto {
   display: flex;
   justify-content: center;
@@ -253,4 +271,58 @@
   text-align: justify;
   padding-top: 30px;
   text-indent: 3em;
+}
+
+/* Corpo da Página - Contato */
+.container-formulario {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 400px;
+  padding-top: 30px;
+}
+
+label {
+  color:var(--cor-texto);
+  margin-bottom: 3px;
+}
+
+#nome,
+#email,
+#mensagem {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: var(--cor-sombra);
+}
+
+#mensagem {
+  height: 30%;
+  resize: none;
+}
+
+.botao {
+  border-radius: 5px;
+  color: var(--cor-links);
+  border: none;
+  box-shadow: var(--cor-sombra);
+  height: 8%;
+  background: var(--cor-fundo-caixas);
+}
+
+#mensagem::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+#mensagem::-webkit-scrollbar-thumb {
+  background: var(--cor-fundo-caixas);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid var(--cor-texto);  /* creates padding around scroll thumb */
 }

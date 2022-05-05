@@ -29,7 +29,7 @@
             <li class="li-menu"><a href="#habilidades">HABILIDADES</a></li>
             <li class="li-menu"><a href="#projetos">PROJETOS</a></li>
             <li class="li-menu"><a href="#sobremim">SOBRE MIM</a></li>
-            <li class="li-menu"><a href="#">CONTATO</a></li>
+            <li class="li-menu"><a href="#contato">CONTATO</a></li>
           </ul>
         </div>
       </div>
@@ -44,13 +44,11 @@
 
         <div class="cabecalho-links">
           <a class="links" href="https://github.com/EdiJunior88" target="_blank">✔️&nbsp;Github</a>
-          <a class="links" href="https://www.linkedin.com/in/edivaldo-junior/" target="_blank">✔️&nbsp;Linkedin</a>
           <a class="links" href="https://www.freecodecamp.org/portuguese/edijunior88" target="_blank">✔️&nbsp;FreeCodeCamp</a>
+          <a class="links" href="https://www.linkedin.com/in/edivaldo-junior/" target="_blank">✔️&nbsp;Linkedin</a>
           <a class="links" href="pdf/Moderno Profissional Currículo.pdf" target="_blank">✔️&nbsp;Currículo</a>
         </div>
       </div>
-
-      
 
       <div class="cabecalho-foto-perfil">
         <img class="foto-perfil" src="img/foto_perfil.jpg" alt="foto perfil">
@@ -218,6 +216,31 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section>
+    <div class="container-corpo">
+      <div class="corpo-titulo">
+        <span id="contato">Contato</span>
+      </div>
+
+      <div class="container-formulario">
+        <form class="formulario" action="https://formsubmit.co/er.moura88@yahoo.com.br" method="POST">
+
+          <!-- Template padrão table para as mensagens enviadas -->
+          <input type="hidden" name="_template" value="table">
+
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" required>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="10" rows="10"></textarea>
+          <button class="botao" type="submit">Enviar</button>
+        </form>
+      </div>
   </section>
 
   <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
