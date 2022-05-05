@@ -173,6 +173,7 @@
   justify-content: center;
   align-items: center;
   background: var(--cor-fundo);
+  height: auto;
   /* border-top: 3px solid #e5e5e5; */
 }
 
@@ -280,6 +281,7 @@
   align-content: center;
   justify-content: center;
   width: 100%;
+  height: 450px;
 }
 
 .formulario {
@@ -332,4 +334,16 @@ label {
   background: var(--cor-fundo-caixas);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 2px solid var(--cor-texto);  /* creates padding around scroll thumb */
+}
+
+/* Footer (Rodapé) da página */
+footer {
+  background: var(--cor-fundo);
+  text-align: center;
+  margin-top: -30px;
+}
+
+footer span {
+  font-size: 0.8em;
+  color: var(--cor-texto);
 }
