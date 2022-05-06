@@ -121,7 +121,6 @@
 
 .subtitulo {
   font-size: 2.3em;
-  padding-bottom: 15px;
 }
 
 .subtitulo2,
@@ -130,11 +129,10 @@
   font-weight: 400;
   word-wrap: break-word;
   text-align: left;
-  padding-bottom: 15px;
 }
 
 .subtitulo3 {
-  line-height: 150%;
+  /* line-height: 150%; */
   text-align: justify;
 }
 
@@ -148,12 +146,11 @@
   box-shadow: 3px 2px 5px 0px var(--cor-sombra);
 }
 
-.cabecalho-links .links {
-  padding-right: 23px;
-}
-
-.cabecalho-links .links:nth-child(4) {
-  padding: 0px;
+.cabecalho-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .links {
@@ -224,7 +221,8 @@
 
 /* Carousel Imagens Projeto */
 .carousel {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   padding-top: 30px;
 }
 
@@ -268,11 +266,21 @@
 }
 
 .texto-sobre-mim {
-  width: 73%;
+  max-width: 800px;
   color: var(--cor-texto);
   text-align: justify;
   padding-top: 30px;
   text-indent: 3em;
+  font-size: 1.2rem;
+}
+
+.texto-sobre-mim a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.texto-sobre-mim p:nth-child(4) {
+  text-align: right;
 }
 
 /* Corpo da Página - Contato */
