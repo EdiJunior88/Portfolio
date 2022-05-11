@@ -301,7 +301,7 @@
 }
 
 label {
-  color:var(--cor-texto);
+  color: var(--cor-texto);
   margin-bottom: 3px;
 }
 
@@ -339,9 +339,9 @@ label {
 }
 
 #mensagem::-webkit-scrollbar-thumb {
-  background: var(--cor-fundo-caixas);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid var(--cor-texto);  /* creates padding around scroll thumb */
+  background: var(--cor-fundo-caixas); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid var(--cor-texto); /* creates padding around scroll thumb */
 }
 
 /* Footer (Rodapé) da página */
@@ -354,4 +354,29 @@ footer {
 footer span {
   font-size: 0.8em;
   color: var(--cor-texto);
+}
+
+/*------------------------------------------------------*/
+/* MEDIA QUERIES */
+/* Resolução base = 1920 * 1080px */
+
+/* Media Query Desktop */
+@media screen and (min-width: 1336px) {
+  .container-cabecalho-titulo {
+    height: 625px;
+  }
+
+  .container-corpo {
+    justify-content: space-evenly;
+    height: 625px;
+  }
+
+  .corpo-habilidades {
+    width: 73%;
+  }
+
+  .texto-sobre-mim {
+    max-width: 990px;
+    font-size: 1.1rem;
+  }
 }
