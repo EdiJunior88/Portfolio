@@ -200,7 +200,7 @@
 
 .corpo-habilidades span {
   color: var(--cor-texto);
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 32px;
 }
 
@@ -359,25 +359,95 @@ footer span {
 
 /*------------------------------------------------------*/
 /* MEDIA QUERIES */
-/* Resolução Base = 1920 * 1080px */
+/* Resolução Base = 1280 * 720px */
 
-/* Media Query Desktop = 1336px*/
-@media screen and (min-width: 1336px) {
+/* Media Query Desktop = 1100px*/
+@media screen and (max-width: 1100px) {
+  /* cabeçalho */
   .container-cabecalho-titulo {
-    height: 625px;
+    height: 570px;
   }
 
-  .container-corpo {
-    justify-content: space-evenly;
-    height: 625px;
+  .cabecalho-titulo {
+    width: 462px;
   }
 
-  .corpo-habilidades {
-    width: 73%;
+  .titulo {
+    font-size: 3.5rem;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo2,
+  .subtitulo3,
+  .links {
+    font-size: 0.9rem;
+  }
+
+  .foto-perfil {
+    width: 90%;
+  }
+
+  /* corpo */
+  .habilidades {
+    width: 144px;
+    height: 140px;
+    margin: 15px;
   }
 
   .texto-sobre-mim {
-    max-width: 990px;
-    font-size: 1.1rem;
+    max-width: 751px;
+  }
+}
+
+/* Media Query Desktop = 1010px*/
+@media screen and (max-width: 1010px) {
+  /* cabeçalho */
+  .container-cabecalho-titulo {
+    height: 490px;
+}
+
+  /* Corpo */
+  .habilidades {
+    width: 133px;
+    height: 133px;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+
+  .corpo-habilidades .svg {
+    width: 50px;
+  }
+
+  .corpo-habilidades span {
+    margin-top: 15px;
+  }
+
+  .corpo-habilidades span {
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    max-width: 640px;
+  }
+
+  .texto-sobre-mim {
+    font-size: 0.9rem;
+  }
+
+  /* Rodapé */
+  label {
+    font-size: 0.9rem;
+  }
+
+  #mensagem {
+    height: 20%;
+    resize: none;
+  }
+
+  .container-formulario {
+    height: 360px;
   }
 }
