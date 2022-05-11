@@ -137,6 +137,9 @@
 }
 
 .cabecalho-foto-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
 }
 
@@ -360,6 +363,7 @@ footer span {
 /*------------------------------------------------------*/
 /* MEDIA QUERIES */
 /* Resolução Base = 1280 * 720px */
+/*------------------------------------------------------*/
 
 /* Media Query Desktop = 1100px*/
 @media screen and (max-width: 1100px) {
@@ -398,16 +402,16 @@ footer span {
   }
 
   .texto-sobre-mim {
-    max-width: 751px;
+    max-width: 75%;
   }
 }
 
 /* Media Query Desktop = 1010px*/
 @media screen and (max-width: 1010px) {
-  /* cabeçalho */
+  /* Cabeçalho */
   .container-cabecalho-titulo {
     height: 490px;
-}
+  }
 
   /* Corpo */
   .habilidades {
@@ -449,5 +453,105 @@ footer span {
 
   .container-formulario {
     height: 360px;
+  }
+}
+
+/* Media Query Tablet = 830px*/
+@media screen and (max-width: 830px) {
+  /* Cabeçalho */
+  .cabecalho-titulo {
+    width: 390px;
+    margin-right: 0px;
+  }
+
+  .titulo {
+    font-size: 2.9rem;
+  }
+
+  .subtitulo {
+    font-size: 1.7rem;
+  }
+
+  .subtitulo2,
+  .subtitulo3,
+  .links {
+    font-size: 0.8rem;
+  }
+
+  .foto-perfil {
+    width: 80%;
+  }
+
+  /* Corpo */
+  .corpo-titulo span {
+    font-size: 1.8rem;
+  }
+
+  .texto-sobre-mim {
+    max-width: 550px;
+    font-size: 0.8rem;
+  }
+
+  /* Rodapé */
+  footer span {
+    font-size: 0.7em;
+  }
+}
+
+/* Media Query Tablet = 690px*/
+@media screen and (max-width: 690px) {
+  /* Cabeçalho */
+  .container-cabecalho-titulo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cabecalho-titulo {
+    align-items: center;
+    width: 400px;
+    margin: 0px;
+  }
+
+  .titulo {
+    margin-top: 20px;
+    font-size: 1.95rem;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+
+  .subtitulo2,
+  .subtitulo3,
+  .links {
+    font-size: 0.7rem;
+  }
+
+  .foto-perfil {
+    width: 65%;
+  }
+
+  /* Corpo */
+  .corpo-titulo span {
+    font-size: 1.6rem;
+  }
+}
+
+/* Media Query Tablet = 590px*/
+@media screen and (max-width: 590px) {
+  /* Cabeçalho */
+  .li-menu a {
+    font-size: 0.85rem;
+  }
+
+  /* Corpo */
+  .carousel {
+    max-width: 100%;
+  }
+
+  .texto-sobre-mim {
+    max-width: 95%;
   }
 }
