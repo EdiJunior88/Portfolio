@@ -66,7 +66,7 @@
 .li-menu a {
   color: var(--cor-links);
   text-decoration: none;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
@@ -115,17 +115,17 @@
 }
 
 .titulo {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 800;
 }
 
 .subtitulo {
-  font-size: 2.3em;
+  font-size: 2.3rem;
 }
 
 .subtitulo2,
 .subtitulo3 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   word-wrap: break-word;
   text-align: left;
@@ -266,12 +266,13 @@
 }
 
 .texto-sobre-mim {
-  max-width: 800px;
+  /* max-width: 800px; */
+  max-width: 920px;
   color: var(--cor-texto);
   text-align: justify;
   padding-top: 30px;
   text-indent: 3em;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .texto-sobre-mim a {
@@ -358,9 +359,9 @@ footer span {
 
 /*------------------------------------------------------*/
 /* MEDIA QUERIES */
-/* Resolução base = 1920 * 1080px */
+/* Resolução Base = 1920 * 1080px */
 
-/* Media Query Desktop */
+/* Media Query Desktop = 1336px*/
 @media screen and (min-width: 1336px) {
   .container-cabecalho-titulo {
     height: 625px;
