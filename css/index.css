@@ -36,8 +36,7 @@
 }
 
 /* Cabeçalho Menu (links) */
-
-/*Escondendo o Menu Hamburguer*/
+/* Escondendo o Menu Hamburguer */
 #botao-menu {
   display: none;
 }
@@ -550,14 +549,21 @@ footer span {
   /* Cabeçalho */
   #botao-menu {
     display: block;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg) brightness(114%) contrast(80%);
+  }
+
+  #botao-menu:hover {
+    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg) brightness(54%) contrast(80%);
   }
 
   .ul-menu {
-    display: none;
-    /* display: block; */
+    display: block;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 0px;
     top: 50px;
     right: auto;
     left: auto;
@@ -566,10 +572,13 @@ footer span {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
   }
 
   .li-menu {
-    padding: 0px;
+    padding: 1rem 0px;
   }
 
   #nav {
@@ -582,11 +591,8 @@ footer span {
   }
 
   #nav.ativo .ul-menu {
-    display: block;
-  }
-
-  #botao-menu {
-    width: 100px;
+    height: calc(100vh - 50px);
+    visibility: visible;
   }
 }
 
