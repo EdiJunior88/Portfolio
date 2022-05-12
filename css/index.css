@@ -649,6 +649,10 @@ footer span {
     justify-content: space-evenly;
   }
 
+  .cabecalho-links a {
+    padding: 0px 10px 10px 0px;
+  }
+
   /* Corpo */
   .texto-sobre-mim {
     max-width: 90%;
@@ -662,5 +666,13 @@ footer span {
 
   footer span {
     font-size: 0.6em;
+  }
+}
+
+/* Media Query Celular = 360px*/
+@media screen and (max-width: 360px) {
+  /* Corpo */
+  .corpo-habilidades {
+    width: 100%;
   }
 }
