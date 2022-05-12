@@ -358,6 +358,7 @@ footer {
   background: var(--cor-fundo);
   text-align: center;
   margin-top: -30px;
+  width: 100%;
 }
 
 footer span {
@@ -544,6 +545,23 @@ footer span {
   }
 }
 
+/* Media Query Tablet = 590px*/
+@media screen and (max-width: 590px) {
+  /* Cabeçalho */
+  .li-menu a {
+    font-size: 0.85rem;
+  }
+
+  /* Corpo */
+  .carousel {
+    max-width: 100%;
+  }
+
+  .texto-sobre-mim {
+    max-width: 95%;
+  }
+}
+
 /* Media Query Celular = 490px*/
 @media screen and (max-width: 490px) {
   /* Cabeçalho */
@@ -552,11 +570,13 @@ footer span {
     width: 70px;
     height: 20px;
     cursor: pointer;
-    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg) brightness(114%) contrast(80%);
+    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg)
+      brightness(114%) contrast(80%);
   }
 
   #botao-menu:hover {
-    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg) brightness(54%) contrast(80%);
+    filter: invert(99%) sepia(3%) saturate(156%) hue-rotate(216deg)
+      brightness(54%) contrast(80%);
   }
 
   .ul-menu {
@@ -572,7 +592,7 @@ footer span {
     text-align: center;
     padding: 0px;
     margin: 0px;
-    transition: .6s;
+    transition: 0.6s;
     visibility: hidden;
     overflow-y: hidden;
   }
@@ -594,21 +614,53 @@ footer span {
     height: calc(100vh - 50px);
     visibility: visible;
   }
-}
 
-/* Media Query Tablet = 590px*/
-@media screen and (max-width: 590px) {
-  /* Cabeçalho */
-  .li-menu a {
-    font-size: 0.85rem;
+  .container-cabecalho-titulo {
+    height: 570px;
+  }
+
+  .foto-perfil {
+    width: 45%;
+  }
+
+  .cabecalho-titulo {
+    width: 300px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.18rem;
+  }
+
+  .subtitulo2 {
+    text-align: center;
+  }
+
+  .subtitulo2,
+  .subtitulo3,
+  .links {
+    font-size: 0.9rem;
+  }
+
+  .cabecalho-links {
+    justify-content: space-evenly;
   }
 
   /* Corpo */
-  .carousel {
-    max-width: 100%;
+  .texto-sobre-mim {
+    max-width: 90%;
+    font-size: 0.9rem;
   }
 
-  .texto-sobre-mim {
-    max-width: 95%;
+  /* Rodapé */
+  .formulario {
+    width: 77%;
+  }
+
+  footer span {
+    font-size: 0.6em;
   }
 }
