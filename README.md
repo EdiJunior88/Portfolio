@@ -29,6 +29,10 @@
 
 <hr>
 
+<p><strong>Link do projeto:</strong> <a href="https://edijunior88.github.io/Portifolio/" target="_blank">https://edijunior88.github.io/Portifolio/</a></p>
+
+<hr>
+
 <p>Totalmente responsivo para as mais diversas telas disponíveis</p>
 
 <img src="index-github.gif" alt="gif site responsivo">
