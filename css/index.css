@@ -36,6 +36,12 @@
 }
 
 /* Cabeçalho Menu (links) */
+
+/*Escondendo o Menu Hamburguer*/
+#botao-menu {
+  display: none;
+}
+
 .container-cabecalho {
   position: fixed;
   width: 100%;
@@ -53,14 +59,14 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-end;
-  height: 100%;
-  margin-right: 13.5%;
-  margin-top: 0px;
+  width: 84%;
+  height: 50px;
+  padding: 0px;
 }
 
 .li-menu {
   list-style: none;
-  padding-left: 2%;
+  padding-left: 3%;
 }
 
 .li-menu a {
@@ -536,6 +542,51 @@ footer span {
   /* Corpo */
   .corpo-titulo span {
     font-size: 1.6rem;
+  }
+}
+
+/* Media Query Celular = 490px*/
+@media screen and (max-width: 490px) {
+  /* Cabeçalho */
+  #botao-menu {
+    display: block;
+  }
+
+  .ul-menu {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    top: 50px;
+    right: auto;
+    left: auto;
+    background: var(--cor-fundo);
+    z-index: 1000;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .li-menu {
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav.ativo .ul-menu {
+    display: block;
+  }
+
+  #botao-menu {
+    width: 100px;
   }
 }
 
