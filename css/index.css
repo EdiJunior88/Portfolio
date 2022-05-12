@@ -415,9 +415,9 @@ footer span {
 /* Media Query Desktop = 1010px*/
 @media screen and (max-width: 1010px) {
   /* Cabeçalho */
-  .container-cabecalho-titulo {
+  /* .container-cabecalho-titulo {
     height: 490px;
-  }
+  } */
 
   /* Corpo */
   .habilidades {
@@ -444,7 +444,7 @@ footer span {
   }
 
   .texto-sobre-mim {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   /* Rodapé */
@@ -495,7 +495,6 @@ footer span {
 
   .texto-sobre-mim {
     max-width: 550px;
-    font-size: 0.8rem;
   }
 
   /* Rodapé */
@@ -507,6 +506,12 @@ footer span {
 /* Media Query Tablet = 690px*/
 @media screen and (max-width: 690px) {
   /* Cabeçalho */
+  .ul-menu {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   .container-cabecalho-titulo {
     display: flex;
     flex-direction: column-reverse;
@@ -516,23 +521,23 @@ footer span {
 
   .cabecalho-titulo {
     align-items: center;
-    width: 400px;
+    width: 360px;
     margin: 0px;
   }
 
   .titulo {
     margin-top: 20px;
-    font-size: 1.95rem;
+    font-size: 2.5rem;
   }
 
   .subtitulo {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .subtitulo2,
   .subtitulo3,
   .links {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .foto-perfil {
